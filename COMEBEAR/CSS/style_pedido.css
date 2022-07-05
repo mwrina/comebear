@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Roboto Slab';
+}
+
+
+body{
+    background-color: #F7F7F7;
+    margin: 0px;
+    width: 400px;
+    height: 670px;
+}
+
+.pesquisa{
+    width: 400px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#form_pesquisa{
+    float: left;
+    display:flex;
+    flex-direction:row;
+    border:none;
+    padding:2px;
+    background-color: #B00000;
+    border-radius: 25px;
+    width:345px;
+}
+
+#barra_pesquisa{
+    background-color: #B00000;
+    border: none;
+    border-radius: 25px;
+    width: 345px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F6BABA;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F6BABA;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #F6BABA;
+}
+
+#pesquisar{
+    flex-grow: 2;
+    border: none;
+    border-radius: 20px;
+    background-color: #B00000;
+}
+
+#pesquisar_img{
+    background-color: #B00000;
+}
+
+input:focus{
+    outline: none;
+}
+
+#notif{
+    border: none
+}
+
+a:link {
+    color: #676767;
+ }
+
+ a:visited {
+    color: green;
+}
+
+/* pedido1 */
+
+.categoria{
+    display: flex;
+    margin: 15px ;
+}
+
+.opcao1{
+    position: absolute;
+width: 381px;
+height: 174px;
+left: 10px;
+top: 230px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+ /* /*  /* /*  /* /*  /* /*  /* /*  /* /*  /* /*  /* /*  /* /* */
+
+.navbar {
+    background-color: #E4E4E4;
+    position: fixed;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+  }
+  
+  /* estilização dos links da barra de notificação */
+  .navbar a {
+    background-color: #E4E4E4;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #navbar_icon{
+      background-color: #E4E4E4;
+  }
+
+  #sushi{
+    position: absolute;
+width: 88px;
+height: 64px;
+left: 5px;
+top: 10px;
+  }
+
+/* produto 1 */
+
+h3{
+position: absolute;
+width: 184px;
+height: 26px;
+left: 130px;
+top:-15px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+
+color: #000000;
+}
+
+p{
+    position: absolute;
+width: 188px;
+height: 28px;
+left: 122px;
+top: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: center;
+
+}
+
+hr{
+    width: 58%;
+    margin-top: 65px;
+    margin-left: 105px;
+}
+
+/*MEIO*/
+
+#qualidade{
+    position: absolute;
+left: 155px;
+top: 75px;
+}
+
+#setinha{
+    position: absolute;
+width: 20px;
+height: 20px;
+left: 350px;
+top: 80px;
+}
+
+#cartoes{
+position: absolute;
+width: 116px;
+height: 17px;
+left: 155px;
+top: 108px;
+}
+
+/*BAIXO*/
+
+#baixo{
+    position: absolute;
+    width: 88px;
+    height: 20px;
+    left: 180px;
+    top: 132px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+
+    /* identificação da altura da caixa */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#pedir{
+    position: absolute;
+width: 80px;
+height: 19px;
+left: 240px;
+top: 142px;
+
+background: #BD0000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+border: none;
+color: #FFFFFF;
+}
+
+/* PEDIDO 2 */
+
+.opcao2{
+    position: absolute;
+width: 381px;
+height: 174px;
+left: 10px;
+top: 425px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

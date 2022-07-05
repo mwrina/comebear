@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    background-color: #F7F7F7;
+    font-family: 'Roboto Slab';
+}
+
+body{
+    margin: 0px;
+    width: 400px;
+    height: 670px;
+}
+
+.body{
+    margin: 3px;
+}
+
+/* PAGINA 01 */
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.texto_pg01{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#texto1{
+    margin-bottom:20px; 
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#texto2{ 
+    margin-bottom:10px; 
+    font-size: 17px;
+    color: #474747;
+    font-family: 'Roboto Slab';
+}
+
+.botoes_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#login_google{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 45px;
+    background-color: #B00000;
+    border: none;
+    color: white;
+    border-radius: 14px;
+    margin-bottom:10px;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+}
+
+#icon_google{
+    background-color: #B00000;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+#login{
+    margin-bottom:10px;
+    width: 280px;
+    height: 45px;
+    background-color: #FFFBEB;
+    border-color: rgb(0, 0, 0);
+    color: black;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+}
+
+#cadastro{
+    margin-bottom:14px;
+    width: 280px;
+    height: 45px;
+    background-color: #FFFBEB;
+    border-color: rgb(0, 0, 0);
+    color: black;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+}
+
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    color: #000000;
+}
+
+/* PAGINA 02 */
+
+.pesquisa{
+    width: 400px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#form_pesquisa{
+    float: left;
+    display:flex;
+    flex-direction:row;
+    border:none;
+    padding:2px;
+    background-color: #B00000;
+    border-radius: 25px;
+    width:345px;
+}
+
+#barra_pesquisa{
+    background-color: #B00000;
+    border: none;
+    border-radius: 25px;
+    width: 345px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F6BABA;
+    opacity: 1; /* Firefox */
+    font-size: 14px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F6BABA;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #F6BABA;
+}
+
+#pesquisar{
+    flex-grow: 2;
+    border: none;
+    border-radius: 20px;
+    background-color: #B00000;
+}
+
+#pesquisar_img{
+    background-color: #B00000;
+}
+
+input:focus{
+    outline: none;
+}
+
+#notif{
+    border: none
+}
+
+#cat_estabelecimentos{
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+a:hover{
+    background-color: none;
+    text-decoration: underline;
+    color: #B00000;
+}
+
+a:active{
+    text-decoration: underline;
+    color: #B00000; 
+}
+
+a:visited{
+    text-decoration: none;
+    color: #000000
+}
+
+a:link{
+    text-decoration: none;
+    color: #000000
+}
+
+.filtros{
+    width: 380px;
+    margin: 10px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#filtros{
+    font-size: 11px;
+    color: #474747;
+    border: 0.5px solid #474747;
+    border-radius: 15px;
+    width: 115px;
+}
+
+#entrega{
+    font-size: 11px;
+    color: #474747;
+    border: 0.5px solid #474747;
+    border-radius: 15px;
+    padding: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#entrega_icon{
+    border: none;
+    border-radius: 15px;
+}
+
+#buscar{
+    font-size: 11px;
+    color: #474747;
+    border: 0.5px solid #474747;
+    border-radius: 15px;
+    padding: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#buscar_icon{
+    border: none;
+    border-radius: 15px;
+}
+
+#cupons{
+    font-size: 11px;
+    color: #474747;
+    border: 0.5px solid #474747;
+    border-radius: 15px;
+    padding: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#cupom_icon{
+    border: none;
+    border-radius: 15px;
+}
+
+.cat_comidas{
+    width: 395px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+#cat_comidas_img{
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+    font-size: 10px;
+}
+
+#botao_cat_comidas{
+    border: none;
+}
+
+.promos{
+    width: 400px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.nav_promo{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#estab_recs{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.estab_recs_imgs{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+#pag_metodos{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.pag_metodos_imgs{
+    width: 400px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.navbar {
+    background-color: #E4E4E4;
+    position: fixed;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    bottom: 0;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    background-color: #E4E4E4;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #navbar_icon{
+      background-color: #E4E4E4;
+  }
+
+  /* PAGINA 03 */
+
+  #txt1{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Roboto Slab';
+}
+
+.total_button{
+    display: flex;
+    flex-direction: column;
+    margin-top:15px;
+    gap: 15px;
+}
+
+.colun1{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.colun2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.colun3{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.colun4{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+.colun5{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+/* PAGINA 04 */
+
+#sem_pedidos{
+    width: 370px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sem_pedidos_p01{
+    font-size: 17px;
+    font-weight: 600;
+    color: #B00000;
+    margin: 0;
+    padding: 1px;
+}
+
+#sem_pedidos_p02{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+    padding: 1px;
+}
+
+/* PAGINA 05 */
+
+#user{
+    border-bottom: 2px solid #808080;
+    display: flex; 
+    padding: 10px;
+}
+
+#user_img{
+    float: left;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+#username{
+    float: left;
+    font-size: 20px;
+}
+
+.promo_amg{
+    margin: auto;
+    margin-top: 5px;
+    width: 260px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    background-color: #FFCC7E;
+    padding-left: 10px;
+}
+
+#promo_amg{
+    width: 260px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #FFCC7E;
+}
+
+#promo_amg_img{
+    float: left;
+    background-color: #FFCC7E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+
+#promo_amg_txt{
+    float: left;
+    font-size: 13px;
+    color: #C00000;
+    background-color:#FFCC7E;
+}
+
+#setinha_promo_amg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFCC7E;
+    float: left;
+    border-radius: 5px;
+}
+
+/* GERAL */
+
+.line{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 390px;
+    border: none;
+    border-bottom: 1px solid #808080;
+    display: flex;
+    background-color: #F7F7F7;
+    padding: 10px;
+    height: 70px;
+}
+
+#line{
+    width: 370px;
+    display: flex;
+    background-color: #F7F7F7;
+}
+
+#icon{
+    float: left;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding-right: 5px;
+}
+.txt{
+    width: 330px;
+    float: left;
+    padding-right: 50px;
+}
+
+#p01{
+    text-align: left;
+    font-size: 13px;
+    color: #353535;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+#p02{
+    text-align: left;
+    font-size: 11px;
+    color: #808080;
+    padding: 0;
+    margin: 0;
+}
+
+#setinha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7F7F7;
+    float: left;
+    text-align: right;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+/* LOGOUT */
+
+#p_logout{
+    height: 50px;
+    text-align: left;
+    font-size: 13px;
+    color: #B00000;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}

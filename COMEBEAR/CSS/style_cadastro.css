@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    background-color: #F7F7F7;
+    font-family: 'Roboto Slab';
+}
+
+body{
+    margin: 0px;
+    width: 400px;
+    height: 670px;
+    display: flex;
+}
+
+.body{
+    margin: 5px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* botões */
+
+.buttons_registro{
+    gap: 10px;
+    float: left;
+    display: flex;
+}
+
+#cliente{
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    background-color: #B00000;
+    color: #F7F7F7;
+    font-size: 14px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+    
+}
+
+#icon_cliente{
+    background-color: #B00000;
+    width: 23px;
+    height: 13px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#entregador{
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    background-color: #B00000;
+    color: #F7F7F7;
+    font-size: 14px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+}
+
+#icon_entreg{
+    background-color: #B00000;
+    width: 23px;
+    height: 13px;
+    float: right;
+}
+
+#estabelecimento{
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    background-color: #B00000;
+    color: #F7F7F7;
+    font-size: 14px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 10px;
+    float: left;
+}
+
+#icon_estab{
+    background-color: #B00000;
+    width: 14px;
+    height: 15px;
+    float: right;
+}
+
+/* formulário */
+
+/* NOME */
+
+#nome{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+/* CPF & RG */
+
+.div_cpf_rg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#cpf{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#rg{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+/* NASC e TEL */
+
+.nasc_tel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nasc{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#tel{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+/* E-MAIL */
+
+#email{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+#confirm_email{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+/* SENHA */
+
+#senha{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+#confirm_senha{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+/***************************************************************************************/
+
+/* CADASTRO - ENTREGADOR */
+
+.rosto_selec_veic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* foto do rosto */
+
+.foto_rosto{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#foto_rosto{
+    width: 100px;
+    height: 100px;
+}
+
+/***************************************************************************************/
+
+/* SELECIONAR: moto ou bike */
+
+.veiculo{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes_veic{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+#select_veic{
+    float: left;
+    width: 133px;
+    height: 120px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    border: none;
+    background-color: #B00000;
+    color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_moto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cnh{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#foto_cnh{
+    height: 100px;
+    width: 100px;
+}
+
+.placa_veic{
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+#placa{
+    font-size: 20px;
+    width: 260px;
+    height: 90px;
+    border: 1px solid #000000;
+}
+
+/* RECAPTCHA */
+
+.recaptcha_termos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recaptcha{
+    border: 1px solid #000000;
+    height: 70px;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#recaptcha_img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/***************************************************************************************/
+
+/* CADASTRO ESTABELECIMENTO*/
+
+#RS{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+.div_cnpj_rg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#cnpj{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#input_tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_estad_cite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#estad{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#cite{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+.div_bairro_endereco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#bairro{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#endereco{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#especi{
+    width: 380px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+}
+
+.div_ser_entreg{
+    display: flex;
+    flex-direction: row;
+}
+
+select{
+    width: 55px;
+    border: 1px solid #000000;
+}
+/***************************************************************************************/
+
+/* TERMOS E CONDIÇÕES */
+
+.termos_condicoes{
+    font-size: 13px;
+    gap: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#but_confirm_cad{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#confirm_cadastro{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    border: none;
+    background-color: #B00000;
+    color: #F7F7F7;
+}

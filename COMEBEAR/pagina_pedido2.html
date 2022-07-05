@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style_pedido2.css">
+    <title>Faça seu pedido!</title>
+</head>
+<body>
+
+    <div class="body">
+
+    <!-- TOPO -->
+    <div class="voltar">
+        <a href="pagina_pedido1.html">
+            <div id="voltar">
+                <img src="imgs/setinha_cinza.png" width="15px" height="15px" id="setinha_voltar">
+                <label for="setinha_voltar" id="voltar_txt">Voltar</label>
+            </div>
+        </a>
+    </div>
+
+    <!-- CORPO -->
+
+    <div class="img">
+        <img src="imgs/sushi.png" alt="COMBO FENG CHENG" width="230px" height="150px" id="combo_fengcheng">
+    </div>
+
+    <hr>
+    <form action="PHP/pedido.php" method="post">
+    
+    <div>
+        <h3 id="nome_pedido">Combo Feng Cheng</h3>
+        <h5>2 djow salmão, 4 niguiri de salmão, 8 uramaki filadélfia, 8 hot filadélfia.</h5>
+    </div>
+    
+    <div class="precos">
+        <div class="preco">
+            <p id="txt_preco">Valor Unitário</p>
+            <p id="preco1">59.90</p>
+        </div>
+        <div class="preco">
+            <p id="txt_preco">Valor Total</p>
+            <p id="preco2"></p>
+        </div>
+        <div class="quant">
+            <p id="txt_quant">Quantidade</p>
+            <select id="quant" onchange="calcPreco()">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+            </select>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="cartao">
+        <div ckass="met_pag">
+            <p id="txt_cartao">Método de pagamento</p>
+            <select id="select_metpag">
+                <option>Visa</option>
+                <option>MasterCard</option>
+                <option>PayPal</option>
+                <option>PIX</option>
+                <option>Dinheiro</option>
+            </select>
+        </div>
+        <div class="tipo_cartao">
+            <p id="txt_cartao">Crédito ou Débito</p>
+            <select id="tipo_cartao">
+                <option>--</option>
+                <option>Crédito</option>
+                <option>Débito</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="dados_cartao">
+        
+        <div class="dados">
+            <div class="nome_titular">
+                <p id="txt_dados">Nome do Titular</p>
+                <input type="text" placeholder="Digite aqui seu nome..." name="nome" id="nome">
+            </div>
+            <div class="num_cartao">
+                <p id="txt_dados">Número do Cartão</p>
+                <input type="number" placeholder="xxxxxxxxxxxxx" id="num_cartao">
+            </div>
+            <div class="cvv_data_venc">
+                <div class="cvv">
+                    <p id="txt_dados">CVV</p>
+                    <input type="number" placeholder="xxx" id="cvv">
+                </div>
+                <div class="data_venc">
+                    <p id="txt_dados">Data de expiração</p>
+                    <input type="month" id="exp">
+                </div>
+            </div>
+            <input type="submit" value="Fazer pedido" id="pedir" name="pedir">
+    </form>
+    </div>
+    </div>
+<script src="JS/pagina_pedido2.js"></script>
+</body>
+</html>

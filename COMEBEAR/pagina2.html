@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="CSS/style_geral.css">
+</head>
+<body>
+    <div class="body">
+
+        <!-- BARRA DE PESQUISA --> 
+
+        <div class="pesquisa">
+            <form id="form_pesquisa">   
+                <input type="search" placeholder="Buscar serviços..." id="barra_pesquisa">
+                <button type="submit" id="pesquisar"><img src="imgs/search_icon.png" width="15px" height="15px" id="pesquisar_img"></button>
+            </form>
+                <button id="notif"><img src="imgs/notif_icon.png" width="15px" height="17px"></button>
+        </div>
+
+        <!-- CORPO -->
+
+        <!-- CATEGORIAS DE ESTABELECIMENTOS -->
+
+        <div id="cat_estabelecimentos">
+            <a href="restaurantes.html">Restaurantes</a>
+            <a href="mercados.html">Mercados</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="farmacias.html">Farmácias</a>
+        </div>
+
+        <!-- FILTROS -->
+
+        <div class="filtros">
+            <select id="filtros">
+                <option value="maior_preco">Maiores preços</option>
+                <option value="menor_preco">Menores preços</option>
+                <option value="mais_prox">Maior proximidade</option>
+                <option value="menos_prox">Menor proximidade</option>
+                <option value="maior_aval">Melhores avaliações</option>
+            </select>
+            <button id="entrega"><img src="imgs/entrega_icon.png" width="13px" height="13px" id="entrega_icon">Entrega grátis</button>
+            <button id="buscar"><img src="imgs/buscar_icon.png" width="13px" height="13px" id="buscar_icon">Para buscar</button>
+            <button id="cupons"><img src="imgs/cupom_icon.png" width="13px" height="13px" id="cupom_icon">Cupons</button>
+        </div>
+
+        <!-- CATEGORIAS DE COMIDA -->
+
+        <div class="cat_comidas">
+            <div id="cat_comidas_img">
+                <button id="botao_cat_comidas"><img src="imgs/sorv_acai.png" width="80px"></button>
+                <br/>
+                <a href="sorv_acai.html">Sorvete e açaí</a>
+            </div>
+            <div id="cat_comidas_img">
+                <button id="botao_cat_comidas"><img src="imgs/fast_food.png" width="80px"></button>
+                <br/>
+                <a href="fast_food.html">Fast food</a>
+            </div>
+            <div id="cat_comidas_img">
+                <button id="botao_cat_comidas"><img src="imgs/salada.png" width="80px"></button>
+                <br/>
+                <a href="salada.html">Comidas saudáveis</a>
+            </div>
+            <div id="cat_comidas_img">
+                <button id="botao_cat_comidas"><img src="imgs/farmacia.png" width="80px"></button>
+                <br/>
+                <a href="farmacia.html">Farmácia</a>
+            </div>
+        </div>
+
+        <!-- PROMOCOES -->
+
+        <div class="promos">
+            <img src="imgs/promo01.png" width="225px">
+            <img src="imgs/promo02.png" width="225px">
+        </div>
+        
+        <div class="nav_promo">
+            <img src="imgs/nav_promo.png" height="5px" width="25px">
+        </div>
+
+        <!-- ESTABELECIMENTOS RECOMENDADOS -->
+
+        <h1 id="estab_recs">Estabelecimentos recomendados</h1>
+
+        <div class="estab_recs_imgs">
+            <img src="imgs/mc_icon.png" width="55px">
+            <img src="imgs/bk_icon.png" width="55px">
+            <img src="imgs/sb_icon.png" width="70px">
+            <img src="imgs/tb_icon.png" width="55px">
+            <img src="imgs/ph_icon.png" width="55px">
+        </div>
+
+        <!-- METODOS DE PAGAMENTO -->
+
+        <h1 id="pag_metodos">Alternativas de pagamento</h1>
+        
+        <div class="pag_metodos_imgs">
+            <img src="imgs/vr.png" width="115px">
+            <img src="imgs/cartao.png" width="115px">
+            <img src="imgs/vs.png" width="115px">
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    
+    <footer>
+        <div class="navbar">
+            <a href="pagina2.html" class="active"><img id="navbar_icon" src="imgs/home_icon_selected.png" width="17px"></a>
+            <a href="pagina3.html"><img id="navbar_icon" src="imgs/search_nav_icon.png" width="17px"></a>
+            <a href="pagina4.html"><img id="navbar_icon" src="imgs/orders_icon.png" width="17px"></a>
+            <a href="pagina5.html"><img id="navbar_icon" src="imgs/user_icon.png" width="17px"></a>
+        </div>
+    </footer>
+</body>
+</html>

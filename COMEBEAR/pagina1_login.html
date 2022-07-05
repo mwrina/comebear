@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/style_login.css">
+
+    <title>Login</title>
+</head>
+<body>
+
+    <a href="index.html"><header id="header_voltar">
+        <img src="imgs/setinha_cinza.png" width="15px" height="15px" id="setinha_voltar">
+        <label for="setinha_voltar" id="voltar_txt">Voltar</label>
+    </header>
+    </a>
+
+    <div class="boas_vindas">
+        <p id="boas_vindas">Bem-vindo(a) de volta,</p>
+        <p id="boas_vindas">cliente Bear!</p>
+    </div>
+
+    <div class="logo">
+        <img src="imgs/logo.png" width="175px" height="175px">
+    </div>
+
+    <div class="instrucoes">
+        <p id="instrucoes">Insira seu email e senha para</p>
+        <p id="instrucoes">conectar</p>
+    </div>
+
+    <div class="inputs">
+        <form action="PHP/login.php" method="post">
+            <div id="label">
+                <label id="label">E-mail</label> <br/>
+            </div>
+            <input type="email" placeholder="Digite aqui o seu e-mail..." name="email" id="input"> <br/>
+            <div id="label">
+                <label id="label">Senha</label> <br/>
+            </div>
+            <input type="password" placeholder="Digite aqui sua senha..." name="senha" id="input"> <br/>
+            <input type="submit" value="Entrar" name="login" id="login">
+        </form>
+        <div class="problemas">
+            <p id="problemas">Problemas para realizar o login</p>
+            <img src="imgs/interrogacao.png" width="20px" height="20px">
+        </div>
+    </div>
+
+</body>
+</html>

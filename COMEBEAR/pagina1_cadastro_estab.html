@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="CSS/style_cadastro.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+<!-- BOTÕES -->
+
+<div class="body">
+    <div class="buttons_registro">
+        <a href="pagina1_cadastro_cliente.html">
+            <button id="cliente">Cliente
+                <div id="img_botao">
+                    <img src="imgs/icon_cliente.png" id="icon_cliente">
+                </div>
+            </button>
+        </a>
+        <a href="pagina1_cadastro_entreg.html">
+            <button id="entregador">Entregador 
+                <div id="img_botao">
+                    <img src="imgs/icon_entreg.png" id="icon_entreg">
+                </div>
+            </button>
+        </a>
+        <a href="pagina1_cadastro_estab.html">
+            <button id="estabelecimento">Estabelecimento 
+                <div id="img_botao">
+                    <img src="imgs/icon_estab.png" id="icon_estab">
+                </div>
+            </button>
+        </a>
+    </div>
+
+<!-- CADASTRO -->
+    <form action="PHP/cadastro_estab.php" method = "post">
+        <div class="form_cadastro">
+
+            <div class="div_nome">
+                <div id="label_nome">
+                    <label for="nome">Nome da Empresa</label>
+                </div>
+                <input type="text" id="nome" name="nome">
+            </div>
+            
+            <div class="div_cnpj_rg">
+                <div id="div_cnpj">
+                    <div id="label_cnpj">
+                        <label for="cnpj" id="label_cnpj">CNPJ</label>
+                    </div>
+                    <input type="number" id="cnpj" name="cnpj">
+                </div>
+                <div id="div_rg">
+                    <div id="label_rg">
+                        <label for="rg" id="label_rg">RG</label>
+                    </div>
+                    <input type="number" id="rg" name="rg"> <br/>
+                </div>
+            </div>
+                
+                <div id="div_tel">
+                        <div id="label_tel">
+                            <label for="tel" style="display: flex; margin-left:100px">Telefone</label>
+                        </div>
+                    <div id="input_tel">
+                        <input type="number" id="tel" name="tel"> <br/>
+                    </div>
+                </div>
+            
+                <div id="div_RS">
+                    <div id="label_RS">
+                        <label for="RS">Razão Social</label>
+                    </div>
+                    <input type="text" id="RS" name="rs">
+                </div>
+
+                <div class="div_estad_cite">
+                    <div id="div_estad">
+                        <div id="label_estad">
+                            <label for="estad" id="label_estad">Estado</label>
+                        </div>
+                        <input type="text" id="estad" name="estado">
+                    </div>
+                    <div id="div_cite">
+                        <div id="label_cite">
+                            <label for="cite" id="label_cite">Cidade</label>
+                        </div>
+                        <input type="text" id="cite" name="cidade"> <br/>
+                    </div>
+                </div>
+
+                <div class="div_bairro_endereco">
+                    <div id="div_bairro">
+                        <div id="label_bairro">
+                            <label for="bairro" id="label_bairro">Bairro</label>
+                        </div>
+                        <input type="text" id="bairro" name="bairro">
+                    </div>
+                    <div id="div_endereco">
+                        <div id="label_endereco">
+                            <label for="endereco" id="label_endereco">Endereço</label>
+                        </div>
+                        <input type="text" id="endereco" name="endereco"> <br/>
+                    </div>
+                </div>
+
+                <div id="div_especi">
+                    <div id="label_especi">
+                        <label for="especi">Especialidade</label>
+                    </div>
+                    <select name="categoria" id="especi" name="categoria">
+                        <option>--</option>
+                        <option value="Fast Food">Fast Food</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Salada">Salada</option>
+                        <option value="Sorvete">Sorvete</option>
+                        <option value="Italiana">Italiana</option>
+                        <option value="Vegana">Vegana</option>
+                        <option value="Churrasco">Churrasco</option>
+                        <option value="Farmácia">Farmácia</option>
+                        <option value="Sobremesas">Sobremesas</option>
+                    </select>
+                </div>
+                    
+                <div id="div_ser_entreg">
+                        <label for="serv_entreg">Serviço de entrega</label>
+                        <select id="serv_entreg" name="serv_entreg">
+                            <option>--</option>
+                            <option value="sim">Sim</option>
+                            <option value="não">Não</option>
+                        </select>
+                </div>
+
+
+<!-- RECAPTCHA -->
+            <div class="recaptcha_termos">
+                <div class="recaptcha">
+                    <div id="check_recaptcha">
+                        <input type="checkbox">
+                    </div>
+                    <div id="text_recaptcha">
+                        <label for="recaptcha_check" id="recaptcha">Não sou um robô</label>
+                    </div>
+                    <div id="img_recaptcha">
+                        <img src="imgs/recaptcha.png" id="recaptcha_img">
+                    </div>
+                </div>
+
+                <div class="termos_condicoes">
+                    <div id="termo1"><input type="checkbox" id="termos1">
+                        <label for="termos1">Eu li e aceito os termos e condições do aplicativo</label> <br/>
+                    </div>
+                    <div id="termo2">
+                        <input type="checkbox" id="termos2">
+                        <label for="termos2">Eu aceito receber notificações de promoções, ofertas de cupons e novidades do aplicativo por e-mail.</label>    
+                    </div>
+                </div>
+            </div>
+
+            <div id="but_confirm_cad">
+                <input type="submit" id="confirm_cadastro" name="confirm_cadastro" value="Avançar">
+            </div>
+
+        </div>
+        
+    </form>
+</div>
+
+</body>
+</html>

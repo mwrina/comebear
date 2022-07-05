@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="CSS/style_cadastro.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+<!-- BOTÕES -->
+
+    <div class="body">
+        <div class="buttons_registro">
+            <a href="pagina1_cadastro_cliente.html">
+                <button id="cliente">Cliente
+                    <div id="img_botao">
+                        <img src="imgs/icon_cliente.png" id="icon_cliente">
+                    </div>
+                </button>
+            </a>
+            <a href="pagina1_cadastro_entreg.html">
+                <button id="entregador">Entregador 
+                    <div id="img_botao">
+                        <img src="imgs/icon_entreg.png" id="icon_entreg">
+                    </div>
+                </button>
+            </a>
+            <a href="pagina1_cadastro_estab.html">
+                <button id="estabelecimento">Estabelecimento 
+                    <div id="img_botao">
+                        <img src="imgs/icon_estab.png" id="icon_estab">
+                    </div>
+                </button>
+            </a>
+        </div>
+
+<!-- CADASTRO -->
+    <form action="PHP/cadastro_entreg.php" method="post">   
+
+        <div class="form_cadastro">
+
+                <div class="div_nome">
+                    <div id="label_nome">
+                        <label for="nome">Nome Completo</label>
+                    </div>
+                    <input type="text" id="nome" name="nome_entreg">
+                </div>
+                
+                <div class="div_cpf_rg">
+
+                    <div id="div_cpf">
+                        <div id="label_cpf">
+                            <label for="cpf" id="label_cpf">CPF</label>
+                        </div>
+                        <input type="number" id="cpf" name="cpf_entreg">
+                    </div>
+
+                    <div id="div_rg">
+                        <div id="label_rg">
+                            <label for="rg" id="label_rg">RG</label>
+                        </div>
+                        <input type="number" id="rg" name="rg_entreg"> <br/>
+                    </div>
+                </div>
+                
+                <div class="nasc_tel">
+                    
+                    <div id="div_nasc">
+                        <div id="label_nasc">
+                            <label for="nasc">Data de Nascimento</label>
+                        </div>
+                        <input type="date" id="nasc" name="nasc_entreg">
+                    </div>
+
+                    <div id="div_tel">
+                        <div id="label_tel">
+                            <label for="tel">Telefone</label>
+                        </div>
+                        <input type="number" id="tel" name="tel_entreg"> <br/>
+                    </div>
+                </div>
+
+                <div class="email_confirm">
+                    <label for="email">E-mail</label> <br/>
+                    <input type="email" id="email" name="email_entreg"> <br/>
+                    <label for="confirm_email" >Confirme seu e-mail</label> <br/>
+                    <input type="email" id="confirm_email" name="confirm_email_entreg"> <br/>
+                </div>
+
+                <div class="senha_confirm">
+                    <label for="senha">Senha</label> <br/>
+                    <input type="password" id="senha" name="senha_entreg"> <br/>
+                    <label for="confirm_senha">Confirme sua senha</label> <br/>
+                    <input type="password" id="confirm_senha" name="confirm_senha_entreg"> <br/>
+                </div>
+
+        </div>
+
+        <div class="rosto_selec_veic">
+            
+            <div id="foto_rosto1">
+                <label for="foto_rosto">Foto do rosto:</label>
+                <input type="image" id="foto_rosto" name="foto_rosto_entreg" src="imgs/img.png">
+            </div>
+
+            <div class="botoes_veic">
+                <input type="button" id="select_veic" name="select_veic" value="Motocicleta">
+
+                <input type="button" id="select_veic" name="select_veic" value="Bicicleta">
+            </div>
+        </div>
+
+    <!-- FORM MOTO -->
+
+        <div class="info_moto">
+            <div class="cnh">
+                <label for="foto_cnh">Foto do CNH</label>
+                <input type="image" id="foto_cnh" src="imgs/img.png" name="foto_cnh">
+            </div>
+            <div class="placa_veic">
+                <label for="placa_veiculo" id="label_placa">Placa do veículo</label>
+                <input type="text" placeholder="Digite aqui sua placa..." name="placa" id="placa">
+            </div>
+        </div>
+
+<!-- RECAPTCHA -->
+
+        <div class="recaptcha_termos">
+            <div class="recaptcha">
+                <div id="input_recaptcha">
+                    <input type="checkbox" id="recaptcha_check">
+                </div>
+                <div id="text_recaptcha">
+                    <label for="recaptcha_check" id="recaptcha">Não sou um robô</label>
+                </div>
+                <div id="img_recaptcha">
+                    <img src="imgs/recaptcha.png" id="recaptcha_img">
+                </div>
+            </div>
+            <div class="termos_condicoes">
+                <div id="termo1"><input type="checkbox" id="termos1">
+                    <label for="termos1">Eu li e aceito os termos e condições do aplicativo</label> <br/>
+                </div>
+                <div id="termo2">
+                    <input type="checkbox" id="termos2">
+                    <label for="termos2">Eu aceito receber notificações de promoções, ofertas de cupons e novidades do aplicativo por e-mail.</label>    
+                </div>
+            </div>
+        </div>
+    
+        <div id="but_confirm_cad">
+        <!-- <a href="pagina2.html"> -->
+            <input type="submit" name="confirm_cadastro" id="confirm_cadastro" value="Confirmar Cadastro">
+        <!-- </a> -->
+        </div>
+    </form>
+
+    </div>
+
+<script src="JS/pagina1_cadastro_entreg.js"></script>
+</body>
+</html>

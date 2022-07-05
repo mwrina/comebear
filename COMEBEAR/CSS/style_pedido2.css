@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    background-color: #F7F7F7;
+    font-family: 'Roboto Slab';
+}
+
+body{
+    margin: 0px;
+    width: 400px;
+    height: 670px;
+}
+
+.body{
+    margin: 5px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TOPO */
+
+.voltar{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: start;
+    margin-right: 320px;
+}
+
+#voltar{
+    text-align: left;
+    align-content: flex-start;
+}
+
+#setinha_voltar{
+    padding-top: 5px;
+}
+
+#voltar_txt {
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    color: #000000;
+}
+
+/* BODY */
+
+.img{
+    text-align: center;
+}
+
+#combo_fengcheng{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+hr{
+    width: 310px;
+    text-align: center;
+}
+
+/* PRECOS/QUANTIDADE */
+
+h3{
+    font-family: 'Roboto';
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+h5{
+    font-family: 'Roboto';
+    text-align: center;
+    color: #7A7A7A;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.precos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.preco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#txt_preco{
+    color: #7A7A7A;
+    font-family: 'Roboto'; 
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+#preco1{
+    color: #8E3E25;
+    font-size: 20px;
+    margin: 0;
+}
+
+#preco2{
+    color: #8E3E25;
+    font-size: 20px;
+    margin: 0;
+}
+
+#txt_quant{
+    color: #7A7A7A;
+    font-family: 'Roboto'; 
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+#quant{
+    text-align: center;
+    color: #7A7A7A;
+    border: 1px solid #000000;
+    width: 90px;
+    font-weight: 600;
+}
+
+.cartao{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#txt_cartao{
+    font-family: 'Roboto';
+    color: #7A7A7A;
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#select_metpag{
+    width: 177px;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+#tipo_cartao{
+    width: 177px;
+    height: 40px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.dados{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.nome_titular{
+    display: flex;
+    flex-direction: column;
+}
+
+#txt_dados{
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+#nome{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+#num_cartao{
+    width: 380px;
+    border: 1px solid #000000;
+}
+
+.cvv_data_venc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.cvv{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.data_venc{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#cvv{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#exp{
+    width: 177px;
+    border: 1px solid #000000;
+}
+
+#pedir{
+    margin-top: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+    border: none;
+    background-color: #B00000;
+    color: #F7F7F7;
+}
+
+

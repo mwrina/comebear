@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    background-color: #F7F7F7;
+    font-family: 'Roboto Slab';
+}
+
+body{
+    margin: 3px;
+    width: 400px;
+    height: 670px;
+}
+
+#header_voltar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#setinha_voltar{
+    padding-top: 5px;
+}
+
+#voltar_txt {
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited{
+    color: #000000;
+}
+
+.boas_vindas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#boas_vindas{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.instrucoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#instrucoes{
+    margin: 0;
+    padding: 0;
+    color: #7A7A7A;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#label{
+    text-align: start;
+    margin-left: 32px;
+}
+
+#input{
+    width: 275px;
+    height: 30px;
+    border: 1px solid #000000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#login{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 275px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #B00000;
+    color: #F7F7F7;
+}
+
+.problemas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4px;
+}
+
+#problemas{
+    font-size: 13px;
+    color: #7A7A7A;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 1px;
+    padding: 0;
+}
