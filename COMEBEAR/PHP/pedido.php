@@ -30,10 +30,16 @@ $nome_pedido = $tags['h3'];
 //GET GERAL
 
 $nome = '';
+$pedir = '';
 
 if(!empty ($_POST['nome'])){
     $nome = $_POST['nome'];
 }
+if(!empty ($_POST['pedir'])){
+    $pedir = $_POST['pedir'];
+}
+
+// GET CPF, ID ESTAB E PRECO
 
 $sql1 = "SELECT * FROM usuario WHERE nome_usuario = '$nome'";
 $result1 = mysqli_query($conn, $sql1);
@@ -48,9 +54,15 @@ $sql2 = "SELECT * FROM produto WHERE nome_produto = '$nome_produto'";
 $result2 = mysqli_query($conn, $sql2);
 
 if(mysqli_num_rows($result2) > 0){
-    while($row2 = mysqli_fetch_assoc($result2)) {
-        $cpf_usu = $row2["id_estab"];
+    while($row2 = mysqli_fetch_assoc($result2)){
+        $id_estab = $row2["id_estab"];
+        $preco = $row2["preco"];
     }
+}
+
+if($pedir == "Fazer pedido"){
+    $res_insert = "INSERT INTO `pedido` (`id_pedido`, `cpf_entreg`, `cpf_cliente`, `id_estab`, `dia_pedido`) VALUES (NULL, NULL, '$cpf_usu', '$id_estab', current_timestamp())";
+    $resposta_insert = mysqli_query($conn, $res_insert);
 }
 
 ?>
